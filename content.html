@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head><script src='file:///android_asset/forge/all.js'></script>
+        <meta charset="windows-1251" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+<script type="text/javascript">
+var d=document, rez=0, 
+
+    ball=0,            //балл за вопрос
+    vsego=3,           //всего вопросов
+    count=0;           //Кол-во правильных ответов
+
+
+
+
+
+
+
+function stopTest(){
+
+var i=0;
+
+//Первый вопрос (переключатели)
+for(i=0; i<d.getElementsByName("q1").length; i++){
+    
+    if(d.getElementsByName("q1")[i].checked) {
+      
+      if(i==0){rez+=5; count++;}      
+  
+    }
+}
+
+
+
+//Второй вопрос (чекБоксы)
+for(i=0; i<d.getElementsByName("q2").length; i++){
+
+    if(d.getElementsByName("q2")[i].checked) {
+      
+      if(i==2){rez+=2; count++;} 
+    }
+
+}
+
+
+alert('Вы набрали '+rez+' баллов\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
+
+rez=0;
+count=0;
+
+location.replace('index.html'); 
+ 
+
+}
+
+</script>
+
+
+    </head>
+    <body>
+        <div class="container">
+                      
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+						
+					
+
+<div id="blok">
+
+<form method="get" enctype="text/plain" name="testForm">
+<h1>Тест</h1>
+<div id="blockQuest">
+<p class="quest"><b>Отметьте примеры с твердым знаком:</b></p><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="1" />   от_явленный плут<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="2" />   кон_як<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="3" />   ар_ергард<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="4" />   с_ехидничать<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="5" />   трех_этажный<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q1" value="6" />   неот_емлемый<br /><br />
+</div>
+
+<div id="blockQuest">
+<p class="quest"><b>В каком ряду во всех словах пропущена одна и та же буква?</b></p><br />
+
+<input class="checkboxstyle"  type="checkbox" name="q2" value="1" /> пр_амбула, пр_имущество, пр_оритет<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q2" value="2" /> бе_радостно, ра_чертить, и_коренить<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q2" value="3" /> ад_ютант, с_язвить, меж_языковой<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q2" value="4" /> по_твердить (ее слова), о_судить (наследство у кого-л.), на_строить (этаж)<br /><br />
+<input class="checkboxstyle"  type="checkbox" name="q2" value="5" /> хр_стоматия, прив_дения (в замке), пер_ферия<br /><br /><br />
+
+
+</div>
+
+<div id="blockQuest">
+<p class="quest"><b>В каких словах на месте пропуска пишется буква И?</b></p><br />
+
+<input class="checkboxstyle" type="checkbox" name="q3" value="1" />   от_явленный плут<br /><br />
+<input class="checkboxstyle" type="checkbox" name="q3" value="2" />   кон_як<br /><br />
+<input class="checkboxstyle" type="checkbox" name="q3" value="3" />   ар_ергард<br /><br />
+<input class="checkboxstyle" type="checkbox" name="q3" value="4" />   с_ехидничать<br /><br />
+<input class="checkboxstyle" type="checkbox" name="q3" value="5" />   трех_этажный<br /><br />
+<input class="checkboxstyle" type="checkbox" name="q3" value="6" />   неот_емлемый<br /><br /><br />
+
+
+</div>
+
+
+<input type="button" value="Принять ответ" name="ok" onclick="stopTest()"/>
+
+<input type="reset" value="Сбросить" name="res" />
+</form>
+</div>
+                        </div>
+
+                      
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

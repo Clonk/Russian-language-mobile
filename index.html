@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<title>Знатоки русского языка</title>
-<meta charset="Windows-1251">
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.mobile-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head><script src='file:///android_asset/forge/all.js'></script>
+        <meta charset="windows-1251" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+     
+        
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
+                               <header>
+                
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1>Знатоки русского языка</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Ваш email адрес </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="к примеру mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="например X8df!90EO" /> 
+                                </p>
+                                
+                                <p class="login button"> 
+                                    <input type="submit" value="Логин" /> 
+								</p>
+								
+								<p class="login button"> 
+                                    <a href="content.html"><input value="Без регистрации" /> </a>
+								</p>
+								
+                                <p class="change_link">
+									Не зарегистрированы?
+									<a href="register.html">Регистрация</a>
+								</p>
+                            </form>
+                        </div>
 
-<div data-role="page">
-
-	<div data-role="header">
-		<h1>З.Р.Я.</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">
-			<h3>Приветствуем вас!	</h3>
-		<p>Если вы читаете это сообщение, то похоже вы установили себе приложения для прохождения теста "Знатоков Русского Языка".</p>
-		
-		<h3>И это странно...</h3>
-
-		<p>Хотя бы потому что качать приложение для пройхождения одного теста это как минимум... идиотизм.</p>
-
-		<h3>И ещё...</h3>
-
-		<p>Мы настолько заняты решением собственных проблем с угревой сыпью и обсуждением новых серий MLP, что не нашли времени на разработку приложения, поэтому оно не работает.</p>
-
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Не писать:
-			<a href="http://gruppa-riska.ru">clonkrullez@mail.ru</a>
-		</h4>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
-</body>
+                      
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
 </html>
