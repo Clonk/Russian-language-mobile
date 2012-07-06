@@ -31,18 +31,22 @@ var d=document, rez=0,
 
 function stopTest(){
 
-var i=0;
+var i=0, bomb=0;
 
 //Первый вопрос (переключатели)
 for(i=0; i<d.getElementsByName("q1").length; i++){
     
     if(d.getElementsByName("q1")[i].checked) {
       
-      if(i==0){rez+=5; count++;}      
-  
+      if(i==0){bomb++;}  
+		if(i==3){bomb++;}   
+		if(i==5){bomb++;}   
+		if(bomb==3){rez+=5; count++;}   	  
+		
     }
+	
 }
-
+bomb=0;
 
 
 //Второй вопрос (чекБоксы)
@@ -72,7 +76,9 @@ location.replace('index.html');
     </head>
     <body>
         <div class="container">
-                      
+                     <header>
+                
+            </header> 
             <section>				
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
