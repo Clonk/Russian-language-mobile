@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head><script src='file:///android_asset/forge/all.js'></script>
+        <meta charset="windows-1251" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Знатоки русского языка</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+<script type="text/javascript">
+var d=document, rez=0, 
+
+    ball=0,            //балл за вопрос
+    vsego=15,           //всего вопросов
+    count=0;           //Кол-во правильных ответов
+	bl=30;
+
+
+
+
+
+
+function stopTest(){
+
+var i=0, bomb=0;
+
+//Первый вопрос 
+for(i=0; i<d.getElementsByName("q1").length; i++){
+    
+    if(d.getElementsByName("q1")[i].checked) {
+      
+      if(i==0){bomb++;}  
+		if(i==3){bomb++;}   
+		if(i==4){bomb++;}   
+		if(i==7){bomb++;}   
+		if(bomb==4){rez+=1; count++;}   	  
+		
+    }
+	
+}
+bomb=0;
+
+
+//Второй вопрос 
+for(i=0; i<d.getElementsByName("q2").length; i++){
+
+    if(d.getElementsByName("q2")[i].checked) {
+      
+      if(i==1){rez+=1; count++;} 
+    }
+
+}
+
+
+for(i=0; i<d.getElementsByName("q3").length; i++){
+
+    if(d.getElementsByName("q3")[i].checked) {
+      
+      if(i==0){rez+=1; count++;} 
+    }
+}
+
+
+for(i=0; i<d.getElementsByName("q4").length; i++){
+
+    if(d.getElementsByName("q4")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;}  
+		if(i==4){bomb++;}   
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q5").length; i++){
+
+    if(d.getElementsByName("q5")[i].checked) {
+      
+      if(i==1){rez+=1; count++;} 
+    }
+}
+
+
+for(i=0; i<d.getElementsByName("q6").length; i++){
+
+    if(d.getElementsByName("q6")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==5){bomb++;}   
+		if(bomb==3){rez+=1; count++;}   	
+	}
+
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q7").length; i++){
+
+    if(d.getElementsByName("q7")[i].checked) {
+      
+      if(i==2){rez+=1; count++;} 
+    }
+}
+
+for(i=0; i<d.getElementsByName("q8").length; i++){
+
+    if(d.getElementsByName("q8")[i].checked) {
+      
+      if(i==0){rez+=1; count++;} 
+    }
+}
+
+
+for(i=0; i<d.getElementsByName("q9").length; i++){
+
+    if(d.getElementsByName("q9")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==5){bomb++;}     
+		if(i==6){bomb++;} 
+		if(i==7){bomb++;}   		
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q10").length; i++){
+
+    if(d.getElementsByName("q10")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;} 		
+		if(bomb==3){rez+=3; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q11").length; i++){
+
+    if(d.getElementsByName("q11")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==3){bomb++;}     
+		if(i==4){bomb++;} 		
+		if(bomb==3){rez+=3; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q12").length; i++){
+
+    if(d.getElementsByName("q12")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;} 		
+		if(bomb==3){rez+=3; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q13").length; i++){
+
+    if(d.getElementsByName("q13")[i].checked) {
+      
+        if(i==2){bomb++;}  
+		if(i==3){bomb++;}     
+		if(i==4){bomb++;}   
+		if(i==9){bomb++;} 		
+		if(bomb==4){rez+=4; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q14").length; i++){
+
+    if(d.getElementsByName("q14")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==1){bomb++;}     
+		if(i==2){bomb++;} 
+		if(i==4){bomb++;}   
+		if(bomb==4){rez+=4; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q15").length; i++){
+
+    if(d.getElementsByName("q15")[i].checked) {
+      
+        if(i==4){bomb++;}  
+		if(i==5){bomb++;}     
+		if(i==6){bomb++;} 
+		if(i==7){bomb++;}  		
+		if(bomb==4){rez+=4; count++;}   	
+	}
+}
+bomb=0;
+
+alert('Вы набрали '+rez+' баллов из '+bl+'\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
+
+rez=0;
+count=0;
+
+location.replace('index.html'); 
+ 
+
+}
+
+</script>
+
+
+    </head>
+    <body>
+        <div class="container">
+                     <header>
+                
+            </header> 
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+						        <p class="login button">
+									<a href="choice.html"><input type="submit" value="Назад" /></a>
+								</p><br>
+					
+
+<div id="blok">
+
+<form method="get" enctype="text/plain" name="testForm">
+<h1>Внимание!</h1>
+<center>
+Для перемещения по тесту используйте прокрутку вниз. <br><br>
+Некоторые вопросы требуют нескольких ответов. <br><br>
+На данном этапе каждый решённый вопрос приносит вам 2, 3 или 4 балла. <br><br>
+</center><br>
+
+<h1>Второй этап</h1>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Выберите нормативную форму существительных в родительном падеже множественного числа:</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="1" /></td>
+					
+					<td>Последний из могикан.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="2" /></td>
+					
+					<td>Изображения сарацинов.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="3" /></td>
+					
+					<td>Сокровища тамплиер.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="4" /></td>
+					
+					<td>Звук пастушьих рожков.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="5" /></td>
+					
+					<td>Школа мичманов.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="6" /></td>
+					
+					<td>Рота дворцовых гренадер.</td>
+					
+				</tr>	
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="7" /></td>
+					
+					<td>Национальные костюмы мордвин.</td>
+					
+				</tr>	
+
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="8" /></td>
+					
+					<td>Обойтись без шарлатанских снадобий.</td>
+					
+				</tr>	
+
+
+
+</table>
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>К какой группе слов можно отнести слово «река»?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="1" /></td>
+					
+					<td>Зайчишка, пирожок, домина, лютик.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="2" /></td>
+					
+					<td>Трубка, ложечка, рука, примадонна.</td>
+				</tr>
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Перед вами знаменитая фраза Л. В. Щербы, в которой вымышленные корни слов сочетаются с русскими суффиксами и окончаниями: «Глокая куздра штеко будланула бокра и курдячит бокренка». Слова «бокр» и «бокренок» относятся к разряду..</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="1" /></td>
+					
+					<td>одушевленных существительных</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="2" /></td>
+					
+					<td>неодушевленных существительных</td>
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте сочетания, которые соответствуют литературной норме:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="1" /></td>
+					
+					<td>двое девушек</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="2" /></td>
+					
+					<td>семеро одного не ждут</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="3" /></td>
+					
+					<td>трое ножниц</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="4" /></td>
+					
+					<td>пятеро друзей</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="5" /></td>
+					
+					<td>четверо суток</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="6" /></td>
+					
+					<td>три пары брюк</td>
+					
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Какое из приведенных ниже высказываний о русском языке принадлежит не отечественному, а иностранному писателю?</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="1" /></td>
+					
+					<td>Русский язык! Тысячелетия создавал народ это гибкое, пышное, неисчерпаемо богатое, умное, поэтическое и трудовое орудие своей социальной жизни, своей мысли, своих чувств, своих надежд, своего гнева, своего великого будущего.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="2" /></td>
+					
+					<td>Русский язык — язык, созданный для поэзии, он необычайно богат и примечателен главным образом тонкостью оттенков.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="3" /></td>
+					
+					<td>Русский язык неисчерпаемо богат и все обогащается с быстротой поражающей.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="4" /></td>
+					
+					<td> Русский язык достаточно богат, он обладает всеми средствами для выражения самых тонких ощущений и оттенков мысли.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="5" /></td>
+					
+					<td>Язык — это история народа. Язык — это путь цивилизации и культуры... Поэтому-то изучение и сбережение русского языка является не праздным занятием от нечего делать, но насущной необходимостью.</td>
+					
+				</tr>
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте слова латинского происхождения:</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="1" /></td>
+					
+					<td>Трансцендентный</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="2" /></td>
+					
+					<td>Менеджмент</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="3" /></td>
+					
+					<td>Корпорация</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="4" /></td>
+					
+					<td>Брифинг</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="5" /></td>
+					
+					<td>Кинематограф</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="6" /></td>
+					
+					<td>Конгломерат</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="7" /></td>
+					
+					<td>Парламент</td>
+					
+				</tr>
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Укажите правильный вариант расстановки запятых:<br/>Рыбы (1) говорят (2) рыболовы (3) охотно (4) идут (5) на приманку.</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="1" /></td>
+					
+					<td>1, 2, 3, 4, 5</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="2" /></td>
+					
+					<td>2</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="3" /></td>
+					
+					<td>1, 3</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="4" /></td>
+					
+					<td>1, 2, 3, 4</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="5" /></td>
+					
+					<td>2, 3, 4</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="6" /></td>
+					
+					<td>2, 5</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="7" /></td>
+					
+					<td>1, 5</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="8" /></td>
+					
+					<td>1, 4</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="9" /></td>
+					
+					<td>2, 4, 5</td>
+					
+				</tr>
+
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>АГОРАФОБИЯ — это...</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="1" /></td>
+					
+					<td>Болезненное состояние, проявляющееся в боязни открытого пространства.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="2" /></td>
+					
+					<td>Боязнь заражения микробами.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="3" /></td>
+					
+					<td>Неприязнь, ненависть ко всему французскому.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="4" /></td>
+					
+					<td>Боязнь воды, водобоязнь.</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="5" /></td>
+					
+					<td>Навязчивый страх, боязнь закрытых помещений.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="6" /></td>
+					
+					<td> Болезненное состояние, проявляющееся в навязчивом страхе перед незнакомыми людьми.</td>
+					
+				</tr>
+</table>
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте правильные варианты написания:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="1" /></td>
+					
+					<td>степплер</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="2" /></td>
+					
+					<td>тинейджер</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="3" /></td>
+					
+					<td>рэйнджер</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="4" /></td>
+					
+					<td>паззл</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="5" /></td>
+					
+					<td>скоч</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="6" /></td>
+					
+					<td>копир</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="7" /></td>
+					
+					<td>чартер</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="8" /></td>
+					
+					<td>сёрфер</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="9" /></td>
+					
+					<td>промоутэр</td>
+					
+				</tr>
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Решите анаграммы: <br/>1. НИШКУП. <br/>2. ЛВШЕМЕЕ. <br/>3. НИБОВОС. <br/>4. НИШПАЯЛ. <br/>Отметьте слова, которые вы отнесли бы к одной группе:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="1" /></td>
+					
+					<td>1</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="2" /></td>
+					
+					<td>2</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="3" /></td>
+					
+					<td>3</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="4" /></td>
+					
+					<td>4</td>
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Слова в каждом ряду объединены одной темой. В каких группах имеется лишнее слово?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="1" /></td>
+					
+					<td>Баллада, сонет, поэма, ода, мадригал.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="2" /></td>
+					
+					<td>Повесть, роман, рассказ, новелла, аммонал.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="3" /></td>
+					
+					<td>Бумага, пергамен, велень, камень, папирус.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="4" /></td>
+					
+					<td>Печатник, полиграфист, переплетчик, метранпаж, маркшейдер.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="5" /></td>
+					
+					<td>Дактиль, амфибрахий, авалист, гекзаметр, анапест.</td>
+				</tr>
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+
+<div id="blockQuest">
+<p class="quest"><h2>В известной песне «Я милого узнаю по походке...» есть загадочная фраза: «Ботиночки он носит нариман». Что она означает? Отметьте неверные трактовки:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="1" /></td>
+					
+					<td>Он носит старые ботинки, не раз побывавшие в починке.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="2" /></td>
+					
+					<td>Он носит обувь производства бакинской фабрики имени Наримана Нариманова.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="3" /></td>
+					
+					<td>Он носит обувь японского производства («нариман» - искаженное Нэрима, один из районов Токио).</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="4" /></td>
+					
+					<td>Под ботинками у него очень качественные носки, так называемые римы (произведенные на фабрике в украинском поселке Римы, в советское время они были дефицитом. Иметь римы считалось престижным).</td>
+				</tr>
+				
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Один московский филолог, скучая на совещании, начал придумывать смешные четверостишия, используя фрагменты известных стихотворений. Вот что у него получилось:<br/><br/>1) Угнать "Камаз"? Пожалуй, он не хуже,<br/>А в чем-то - даже лучше "Жигуля"!<br/>Ну что ж, попробуем: огромный, неуклюжий<br/>Скрипучий поворот руля... <br/><br/>2) Пьян был в дым, ругался грубо<br/>И валялся у забора...<br/>"Бобэоби" - пелись губы,<br/>"Вээоми" - пелись взоры. <br/><br/>3) Машину занесло сначала -<br/>И повторилось все, как встарь:<br/>Ночь. Ледяная рябь канала.<br/>Аптека. Улица. Фонарь. <br/><br/>4) Меня Вы на кушетку повалили,<br/>А сами сели на меня верхом:<br/>Я был как лошадь, загнанная в мыле,<br/>Пришпоренная смелым ездоком. <br/><br/>Какие авторы щедро поделились своими строчками со скучающим московским филологом?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="1" /></td>
+					
+					<td>М. Лермонтов</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="2" /></td>
+					
+					<td>А. Ахматова</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="3" /></td>
+					
+					<td>О. Мандельштам</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="4" /></td>
+					
+					<td>В. Хлебников</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="5" /></td>
+					
+					<td>А. Блок</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="6" /></td>
+					
+					<td>К. Батюшков</td>
+					
+				</tr>
+			
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="7" /></td>
+					
+					<td>Н. Некрасов</td>
+					
+				</tr>
+			
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="8" /></td>
+					
+					<td>А. Пушкин</td>
+					
+				</tr>
+			
+			
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="9" /></td>
+					
+					<td>М. Цветаева</td>
+					
+				</tr>
+			
+			
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="10" /></td>
+					
+					<td>С. Есенин</td>
+					
+				</tr>
+			
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Среди приведенных ниже утверждений выберите верные:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="1" /></td>
+					
+					<td>Слово «бедлам» произошло от названия лондонской психиатрической больницы.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="2" /></td>
+					
+					<td>Название брюк «галифе» было образовано от фамилии французского кавалерийского генерала.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="3" /></td>
+					
+					<td>Слово «маузер» произошло от фамилии братьев Маузер, владельцев оружейного завода.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="4" /></td>
+					
+					<td>Слово «скетч» (небольшая эстрадная пьеса шутливого и острого содержания) было образовано от фамилии известного английского комического актера.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="5" /></td>
+					
+					<td>Сорт мороженого «пломбир» получил свое название от французского города Пломбьер.</td>
+				</tr>
+			
+			
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Перед вами текст, каждое предложение в котором — название литературного произведения: «Путешествие из Петербурга в Москву. За далью — даль. Степь. Дым. Телега жизни. Прощай, немытая Россия...» Отметьте фамилии авторов, произведения которых не были использованы при создании этого фрагмента:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="1" /></td>
+					
+					<td>А. Т. Твардовский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="2" /></td>
+					
+					<td>А. Н. Радищев</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="3" /></td>
+					
+					<td>А. С. Пушкин</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="4" /></td>
+					
+					<td>М. Ю. Лермонтов</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="5" /></td>
+					
+					<td>А. Блок</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="6" /></td>
+					
+					<td>Н. Гумилев</td>
+					
+				</tr>
+			
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="7" /></td>
+					
+					<td>Л. Н. Толстой</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="8" /></td>
+					
+					<td>Ф. М. Достоевский</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="9" /></td>
+					
+					<td>И. С. Тургенев</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="10" /></td>
+					
+					<td>А. П. Чехов</td>
+					
+				</tr>
+				
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<p class="login button">
+<input type="button" value="Принять" name="ok" onclick="stopTest()"/>
+</p>
+                                <p class="change_link">
+									Надоело проходить?
+									<a href="choice.html">Назад</a>
+								</p>
+
+</form>
+</div>
+                        </div>
+
+                      
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

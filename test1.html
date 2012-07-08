@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head><script src='file:///android_asset/forge/all.js'></script>
+        <meta charset="windows-1251" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Знатоки русского языка</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+<script type="text/javascript">
+var d=document, rez=0, 
+
+    ball=0,            //балл за вопрос
+    vsego=15,           //всего вопросов
+    count=0;           //Кол-во правильных ответов
+
+
+
+
+
+
+
+function stopTest(){
+
+var i=0, bomb=0;
+
+//Первый вопрос 
+for(i=0; i<d.getElementsByName("q1").length; i++){
+    
+    if(d.getElementsByName("q1")[i].checked) {
+      
+      if(i==0){bomb++;}  
+		if(i==3){bomb++;}   
+		if(i==5){bomb++;}   
+		if(bomb==3){rez+=1; count++;}   	  
+		
+    }
+	
+}
+bomb=0;
+
+
+//Второй вопрос 
+for(i=0; i<d.getElementsByName("q2").length; i++){
+
+    if(d.getElementsByName("q2")[i].checked) {
+      
+      if(i==4){rez+=1; count++;} 
+    }
+
+}
+
+
+for(i=0; i<d.getElementsByName("q3").length; i++){
+
+    if(d.getElementsByName("q3")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}    
+		if(i==5){bomb++;}   
+		if(i==6){bomb++;}   
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q4").length; i++){
+
+    if(d.getElementsByName("q4")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;}  
+		if(i==4){bomb++;}  
+		if(i==5){bomb++;}  
+		if(bomb==5){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q5").length; i++){
+
+    if(d.getElementsByName("q5")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==4){bomb++;}  
+		if(i==5){bomb++;}  
+		if(i==7){bomb++;}  
+		if(i==8){bomb++;}  
+		if(i==9){bomb++;}  
+		if(bomb==7){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q6").length; i++){
+
+    if(d.getElementsByName("q6")[i].checked) {
+      
+      if(i==1){rez+=1; count++;} 
+    }
+
+}
+
+for(i=0; i<d.getElementsByName("q7").length; i++){
+
+    if(d.getElementsByName("q7")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==6){bomb++;}   
+		if(bomb==3){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q8").length; i++){
+
+    if(d.getElementsByName("q8")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;} 
+		if(i==4){bomb++;}   		
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q9").length; i++){
+
+    if(d.getElementsByName("q9")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==1){bomb++;}     
+		if(i==2){bomb++;} 
+		if(i==4){bomb++;}   		
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q10").length; i++){
+
+    if(d.getElementsByName("q10")[i].checked) {
+      
+      if(i==3){rez+=1; count++;} 
+    }
+}
+
+for(i=0; i<d.getElementsByName("q11").length; i++){
+
+    if(d.getElementsByName("q11")[i].checked) {
+      
+      if(i==4){rez+=1; count++;} 
+    }
+}
+
+for(i=0; i<d.getElementsByName("q12").length; i++){
+
+    if(d.getElementsByName("q12")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==3){bomb++;}     
+		if(i==4){bomb++;} 
+		if(i==5){bomb++;}   
+		if(i==6){bomb++;}  		
+		if(bomb==5){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q13").length; i++){
+
+    if(d.getElementsByName("q13")[i].checked) {
+      
+        if(i==0){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==5){bomb++;}   		
+		if(bomb==3){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q14").length; i++){
+
+    if(d.getElementsByName("q14")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==3){bomb++;} 
+		if(i==4){bomb++;}   
+		if(bomb==4){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+for(i=0; i<d.getElementsByName("q15").length; i++){
+
+    if(d.getElementsByName("q15")[i].checked) {
+      
+        if(i==1){bomb++;}  
+		if(i==2){bomb++;}     
+		if(i==4){bomb++;}  		
+		if(bomb==3){rez+=1; count++;}   	
+	}
+}
+bomb=0;
+
+alert('Вы набрали '+rez+' баллов\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
+
+rez=0;
+count=0;
+
+location.replace('index.html'); 
+ 
+
+}
+
+</script>
+
+
+    </head>
+    <body>
+        <div class="container">
+                     <header>
+                
+            </header> 
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+						        <p class="login button">
+									<a href="choice.html"><input type="submit" value="Назад" /></a>
+								</p><br>
+					
+
+<div id="blok">
+
+<form method="get" enctype="text/plain" name="testForm">
+<h1>Внимание!</h1>
+<center>
+Для перемещения по тесту используйте прокрутку вниз. <br><br>
+Некоторые вопросы требуют нескольких ответов. <br><br>
+На данном этапе каждый решённый вопрос приносит вам 1 балл. <br><br>
+</center><br>
+
+<h1>Первый этап</h1>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте слова, которые пишутся слитно:</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="1" /></td>
+					
+					<td>(древне)русский</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="2" /></td>
+					
+					<td>Царь(пушка)</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="3" /></td>
+					
+					<td>(театр)студия</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="4" /></td>
+					
+					<td>(зелено)глазый</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="5" /></td>
+					
+					<td>(пресс)папье</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q1" value="6" /></td>
+					
+					<td>(фото)робот</td>
+					
+				</tr>	
+
+
+</table>
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте лишнее слово в ряду синонимов:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="1" /></td>
+					
+					<td>глубинка</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="2" /></td>
+					
+					<td>тмутаракань</td>
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="3" /></td>
+					
+					<td>дыра</td>
+				</tr>
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="4" /></td>
+					
+					<td>захолустье</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="5" /></td>
+					
+					<td>столица</td>
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="6" /></td>
+					
+					<td>глушь</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+				
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q2" value="7" /></td>
+					
+					<td>медвежий угол</td>
+				</tr>
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких словах на месте пропуска пишется мягкий знак?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="1" /></td>
+					
+					<td>невтерпеж_</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="2" /></td>
+					
+					<td>фальш_</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="3" /></td>
+					
+					<td>проч_</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="4" /></td>
+					
+					<td> замуж_</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="5" /></td>
+					
+					<td>светоч_</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="6" /></td>
+					
+					<td>бреш_</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+				
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q3" value="7" /></td>
+					
+					<td>бриош_</td>
+					
+				</tr>
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких словах НЕ пишется слитно?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="1" /></td>
+					
+					<td>(не)вежество</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="2" /></td>
+					
+					<td>(не)смотря на трудности</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="3" /></td>
+					
+					<td>(не)изгладимый</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="4" /></td>
+					
+					<td>(не)что</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="5" /></td>
+					
+					<td>(не)настная</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q4" value="6" /></td>
+					
+					<td>(не)видимка</td>
+					
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких словах на месте пропуска пишется буква Е?</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="1" /></td>
+					
+					<td>д(е, э)длайн</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="2" /></td>
+					
+					<td>квинт(е, э)ссенция</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="3" /></td>
+					
+					<td>д(е, э)нди</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="4" /></td>
+					
+					<td> ду(е, э)лянт</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="5" /></td>
+					
+					<td>п(е, э)рст</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="6" /></td>
+					
+					<td>т(е, э)рмос</td>
+					
+				</tr>	
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="7" /></td>
+					
+					<td>м(е, э)р</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="8" /></td>
+					
+					<td>т(е, э)рра инкогнита</td>
+					
+				</tr>	
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="9" /></td>
+					
+					<td>т(е, э)кила</td>
+					
+				</tr>	
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q5" value="10" /></td>
+					
+					<td>пр(е, э)зумпция невиновности</td>
+					
+				</tr>	
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Правила литературного произношения отражены...</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="1" /></td>
+					
+					<td>в толковом словаре</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="2" /></td>
+					
+					<td>в орфоэпическом словаре</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="3" /></td>
+					
+					<td>в орфографическом словаре</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q6" value="4" /></td>
+					
+					<td>в этимологическом словаре</td>
+					
+				</tr>
+
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте примеры с непроизносимой согласной:</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="1" /></td>
+					
+					<td>кос_ноязычный</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="2" /></td>
+					
+					<td>сверс_ник</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="3" /></td>
+					
+					<td>предчу_ствие</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="4" /></td>
+					
+					<td>лос_ниться</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="5" /></td>
+					
+					<td>преце_дент</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="6" /></td>
+					
+					<td>блес_нуть</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q7" value="7" /></td>
+					
+					<td>пас_бище</td>
+					
+				</tr>
+
+</table>
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких словах на месте пропуска пишется буква О?</h2></p>
+
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="1" /></td>
+					
+					<td>ц_кольный</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="2" /></td>
+					
+					<td>ч_боты</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="3" /></td>
+					
+					<td>ч_мга</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="4" /></td>
+					
+					<td>ш_визизм</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="5" /></td>
+					
+					<td>ш_мпол</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="6" /></td>
+					
+					<td>корч_вка</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="7" /></td>
+					
+					<td>ш_валье</td>
+					
+				</tr>
+
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q8" value="8" /></td>
+					
+					<td>ж_ваный</td>
+					
+				</tr>
+</table>
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Укажите существительные общего рода:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="1" /></td>
+					
+					<td>горемыка</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="2" /></td>
+					
+					<td>лежебока</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="3" /></td>
+					
+					<td>дока</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="4" /></td>
+					
+					<td>букса</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="5" /></td>
+					
+					<td>плакса</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="6" /></td>
+					
+					<td>такса</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="7" /></td>
+					
+					<td>вакса</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q9" value="8" /></td>
+					
+					<td>клякса</td>
+					
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Подберите синоним к слову «двойственный»:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="1" /></td>
+					
+					<td>амбициозный</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="2" /></td>
+					
+					<td>рентабельный</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="3" /></td>
+					
+					<td>мелиоративный</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q10" value="4" /></td>
+					
+					<td>амбивалентный</td>
+				</tr>
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Укажите верное значение слова «криогенный»:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="1" /></td>
+					
+					<td>Порождающий преступления, способствующий их совершению.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="2" /></td>
+					
+					<td>Появившийся как результат деятельности человека; порождаемый деятельностью человека.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="3" /></td>
+					
+					<td>Заключающийся в использовании самовнушения при регулировании своего физического и психического состояния.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="4" /></td>
+					
+					<td>Передающийся воздушным путем.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="5" /></td>
+					
+					<td>Относящийся к низким температурам.</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="6" /></td>
+					
+					<td>Имеющий вулканическое происхождение.</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q11" value="7" /></td>
+					
+					<td>Вызывающий нарушения деятельности желудка.</td>
+					
+				</tr>
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких случаях на месте пропуска пишется твердый знак?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="1" /></td>
+					
+					<td>авал_ман</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="2" /></td>
+					
+					<td>аб_юрация</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="3" /></td>
+					
+					<td>абдоминал_ный</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="4" /></td>
+					
+					<td>ад_юнкт</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="5" /></td>
+					
+					<td>аэрофотос_емка</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="6" /></td>
+					
+					<td>ад_ективация</td>
+					
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q12" value="7" /></td>
+					
+					<td>агропромоб_единение</td>
+					
+				</tr>
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>В каких словах правильно поставлено ударение?</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="1" /></td>
+					
+					<td>абиссИнский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="2" /></td>
+					
+					<td>вебЕровский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="3" /></td>
+					
+					<td>галисИйский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="4" /></td>
+					
+					<td>авЕстийский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="5" /></td>
+					
+					<td>кракОвский</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q13" value="6" /></td>
+					
+					<td>алапАевский</td>
+					
+				</tr>
+			
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<div id="blockQuest">
+<p class="quest"><h2>Укажите существительные среднего рода:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="1" /></td>
+					
+					<td>сомелье</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="2" /></td>
+					
+					<td>ателье</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="3" /></td>
+					
+					<td>очелье</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="4" /></td>
+					
+					<td>ришелье</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q14" value="5" /></td>
+					
+					<td>ожерелье</td>
+				</tr>
+			
+			
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+<div id="blockQuest">
+<p class="quest"><h2>Отметьте слова с удвоенной согласной:</h2></p>
+
+
+<table>
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="1" /></td>
+					
+					<td>ко(р, рр)пункт</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="2" /></td>
+					
+					<td>пятиба(л, лл)ьный</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="3" /></td>
+					
+					<td>апе(л, лл)яция</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="4" /></td>
+					
+					<td>прида(н, нн)ое</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="5" /></td>
+					
+					<td>а капе(л, лл)а</td>
+				</tr>
+				
+		<tr>
+			<td> <br /></td>
+		</tr>
+		
+				<tr>
+					<td width="25" height="25"><input class="checkboxstyle" type="checkbox" name="q15" value="6" /></td>
+					
+					<td>аллегре(т, тт)о</td>
+					
+				</tr>
+			
+				
+
+
+</table>
+
+</div>
+<br><br>
+
+
+<p class="login button">
+<input type="button" value="Принять" name="ok" onclick="stopTest()"/>
+</p>
+                                <p class="change_link">
+									Надоело проходить?
+									<a href="choice.html">Назад</a>
+								</p>
+
+</form>
+</div>
+                        </div>
+
+                      
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>
