@@ -22,7 +22,7 @@ var d=document, rez=0,
     ball=0,            //балл за вопрос
     vsego=15,           //всего вопросов
     count=0;           //Кол-во правильных ответов
-	bl=30;
+	bl=39;
 
 
 
@@ -42,7 +42,7 @@ for(i=0; i<d.getElementsByName("q1").length; i++){
 		if(i==3){bomb++;}   
 		if(i==4){bomb++;}   
 		if(i==7){bomb++;}   
-		if(bomb==4){rez+=1; count++;}   	  
+		if(bomb==4){rez+=2; count++;}   	  
 		
     }
 	
@@ -55,7 +55,7 @@ for(i=0; i<d.getElementsByName("q2").length; i++){
 
     if(d.getElementsByName("q2")[i].checked) {
       
-      if(i==1){rez+=1; count++;} 
+      if(i==1){rez+=2; count++;} 
     }
 
 }
@@ -65,7 +65,7 @@ for(i=0; i<d.getElementsByName("q3").length; i++){
 
     if(d.getElementsByName("q3")[i].checked) {
       
-      if(i==0){rez+=1; count++;} 
+      if(i==0){rez+=2; count++;} 
     }
 }
 
@@ -78,7 +78,7 @@ for(i=0; i<d.getElementsByName("q4").length; i++){
 		if(i==2){bomb++;}     
 		if(i==3){bomb++;}  
 		if(i==4){bomb++;}   
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){rez+=2; count++;}   	
 	}
 }
 bomb=0;
@@ -87,7 +87,7 @@ for(i=0; i<d.getElementsByName("q5").length; i++){
 
     if(d.getElementsByName("q5")[i].checked) {
       
-      if(i==1){rez+=1; count++;} 
+      if(i==1){rez+=2; count++;} 
     }
 }
 
@@ -99,7 +99,7 @@ for(i=0; i<d.getElementsByName("q6").length; i++){
         if(i==0){bomb++;}  
 		if(i==2){bomb++;}     
 		if(i==5){bomb++;}   
-		if(bomb==3){rez+=1; count++;}   	
+		if(bomb==3){rez+=2; count++;}   	
 	}
 
 }
@@ -109,7 +109,7 @@ for(i=0; i<d.getElementsByName("q7").length; i++){
 
     if(d.getElementsByName("q7")[i].checked) {
       
-      if(i==2){rez+=1; count++;} 
+      if(i==2){rez+=2; count++;} 
     }
 }
 
@@ -117,7 +117,7 @@ for(i=0; i<d.getElementsByName("q8").length; i++){
 
     if(d.getElementsByName("q8")[i].checked) {
       
-      if(i==0){rez+=1; count++;} 
+      if(i==0){rez+=2; count++;} 
     }
 }
 
@@ -130,7 +130,7 @@ for(i=0; i<d.getElementsByName("q9").length; i++){
 		if(i==5){bomb++;}     
 		if(i==6){bomb++;} 
 		if(i==7){bomb++;}   		
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){rez+=2; count++;}   	
 	}
 }
 bomb=0;
@@ -215,7 +215,7 @@ alert('Вы набрали '+rez+' баллов из '+bl+'\nВы правильно ответили на '+count+ ' 
 rez=0;
 count=0;
 
-location.replace('index.html'); 
+location.replace('choice.html'); 
  
 
 }

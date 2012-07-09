@@ -17,6 +17,7 @@
          url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+	font-size: 16pt;
 }
 @font-face {
     font-family: 'FranchiseRegular';
@@ -27,6 +28,7 @@
          url('fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+	font-size: 16pt;
 
 }
 a.hiddenanchor{
@@ -36,9 +38,9 @@ a.hiddenanchor{
 #wrapper{
 	width: 60%;
 	right: 0px;
-	min-height: 560px;	
+	min-height: 100%;	
 	margin: 0px auto;	
-	width: 500px;
+	width: 95%;
 	position: relative;	
 }
 /**** Styling the form elements **/
@@ -50,26 +52,48 @@ a.hiddenanchor{
 }
 
 #wrapper h1{
-	font-size: 48px;
+	font-size: 21px;
 	color: rgb(6, 106, 117);
 	padding: 2px 0 10px 0;
-	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	
 	font-weight: bold;
 	text-align: center;
-	padding-bottom: 30px;
+	
 }
 /** For the moment only webkit supports the background-clip:text; */
 #wrapper h1{
-    background: -webkit-repeating-linear-gradient(-45deg, 
-	rgb(18, 83, 93) , 
-	rgb(18, 83, 93) 20px, 
-	rgb(64, 111, 118) 20px, 
-	rgb(64, 111, 118) 40px, 
-	rgb(18, 83, 93) 40px);
-	-webkit-text-fill-color: transparent;
+
 	-webkit-background-clip: text;
 }
 #wrapper h1:after{
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%); 
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), color-stop(100%,rgba(147,184,189,0))); 
+	background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: -o-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+#wrapper h2{
+	font-size: 16px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	
+	font-weight: bold;
+	text-align: center;
+	
+}
+/** For the moment only webkit supports the background-clip:text; */
+#wrapper h2{
+
+	-webkit-background-clip: text;
+}
+#wrapper h2:after{
 	content: ' ';
 	display: block;
 	width: 100%;
@@ -111,7 +135,7 @@ input {
 
 /* all the input except submit and checkbox */
 #wrapper input:not([type="checkbox"]){
-	width: 92%;
+	width: 88%;
 	margin-top: 4px;
 	padding: 10px 5px 10px 32px;	
 	border: 1px solid rgb(178, 178, 178);
@@ -152,7 +176,7 @@ input {
 
 /*styling both submit buttons */
 #wrapper p.button input{
-	width: 30%;
+	width: 120pt;
 	cursor: pointer;	
 	background: rgb(61, 157, 179);
 	padding: 8px 5px;
@@ -160,7 +184,7 @@ input {
 	color: #fff;
 	font-size: 24px;	
 	border: 1px solid rgb(28, 108, 122);	
-	margin-bottom: 10px;	
+	margin-bottom: 5px;	
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -194,11 +218,21 @@ input {
 }
 p.login.button,
 p.signin.button{
-	text-align: right;
+	text-align: center;
 	margin: 5px 0;
 }
 
-
+/*Стиль чекбокса*/
+.checkboxstyle{
+  width: 40px;
+  height: 20px;
+  padding: 0 5px 0 0;
+  background: url(checkbox.png) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
+  
 /* styling the checkbox "keep me logged in"*/
 .keeplogin{
 	margin-top: -5px;
@@ -217,6 +251,7 @@ p.signin.button{
 }
 
 
+
 /*styling the links to change from one form to another */
 
 p.change_link{
@@ -224,8 +259,8 @@ p.change_link{
 	color: rgb(127, 124, 124);
 	left: 0px;
 	height: 20px;
-	width: 440px;
-	padding: 17px 30px 20px 30px;
+	width: 90%;
+	padding: 17px 30px 20px 0px;
 	font-size: 16px	;
 	text-align: right;
 	border-top: 1px solid rgb(219, 229, 232);
@@ -308,7 +343,7 @@ p.change_link{
 }
 #register{	
 	z-index: 21;
-	opacity: 0;
+	
 }
 #login{
 	z-index: 22;
@@ -316,51 +351,46 @@ p.change_link{
 #toregister:target ~ #wrapper #register,
 #tologin:target ~ #wrapper #login{
 	z-index: 22;
-	-webkit-animation-delay: .6s;
-	-webkit-animation-timing-function: ease-in;
-	-moz-animation-delay: .6s;
-	-moz-animation-timing-function: ease-in;
-	-o-animation-delay: .6s;
-	-o-animation-timing-function: ease-in;
-	-ms-animation-delay: .6s;
-	-ms-animation-timing-function: ease-in;
-	animation-delay: .6s;
-	animation-timing-function: ease-in;
-	-webkit-animation-name: scaleIn;
-	-moz-animation-name: scaleIn;
-	-ms-animation-name: scaleIn;
-	-o-animation-name: scaleIn;
-	animation-name: scaleIn;
+	-webkit-animation-name: fadeInLeft;
+	-moz-animation-name: fadeInLeft;
+	-ms-animation-name: fadeInLeft;
+	-o-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+	-ms-animation-delay: .1s;
+	animation-delay: .1s;
 }
 #toregister:target ~ #wrapper #login,
 #tologin:target ~ #wrapper #register{
-	-webkit-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-ms-animation-timing-function: ease-out;
-	animation-timing-function: ease-out;
-	-webkit-animation-name: scaleOut;
-	-moz-animation-name: scaleOut;
-	-ms-animation-name: scaleOut;
-	-o-animation-name: scaleOut;
-	animation-name: scaleOut;
+	-webkit-animation-name: fadeOutLeft;
+	-moz-animation-name: fadeOutLeft;
+	-ms-animation-name: fadeOutLeft;
+	-o-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
 }
 
 /** the actual animation, credit where due : http://daneden.me/animate/ ***/
 .animate{
 	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
 	-webkit-animation-fill-mode: both;
 	
 	-moz-animation-duration: 0.5s;
+	-moz-animation-timing-function: ease;
 	-moz-animation-fill-mode: both;
 	
 	-o-animation-duration: 0.5s;
+	-o-animation-timing-function: ease;
 	-o-animation-fill-mode: both;
 	
 	-ms-animation-duration: 0.5s;
+	-ms-animation-timing-function: ease;
 	-ms-animation-fill-mode: both;
 	
 	animation-duration: 0.5s;
+	animation-timing-function: ease;
 	animation-fill-mode: both;
 }
 
