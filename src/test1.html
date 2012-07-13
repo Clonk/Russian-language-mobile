@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
 <script type="text/javascript">
-var d=document, rez=0, 
+var d=document, score=0, 
 
     ball=0,            //балл за вопрос
     vsego=15,           //всего вопросов
@@ -41,7 +41,7 @@ for(i=0; i<d.getElementsByName("q1").length; i++){
       if(i==0){bomb++;}  
 		if(i==3){bomb++;}   
 		if(i==5){bomb++;}   
-		if(bomb==3){rez+=1; count++;}   	  
+		if(bomb==3){score+=1; count++;}   	  
 		
     }
 	
@@ -54,7 +54,7 @@ for(i=0; i<d.getElementsByName("q2").length; i++){
 
     if(d.getElementsByName("q2")[i].checked) {
       
-      if(i==4){rez+=1; count++;} 
+      if(i==4){score+=1; count++;} 
     }
 
 }
@@ -68,7 +68,7 @@ for(i=0; i<d.getElementsByName("q3").length; i++){
 		if(i==2){bomb++;}    
 		if(i==5){bomb++;}   
 		if(i==6){bomb++;}   
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -82,7 +82,7 @@ for(i=0; i<d.getElementsByName("q4").length; i++){
 		if(i==3){bomb++;}  
 		if(i==4){bomb++;}  
 		if(i==5){bomb++;}  
-		if(bomb==5){rez+=1; count++;}   	
+		if(bomb==5){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -98,7 +98,7 @@ for(i=0; i<d.getElementsByName("q5").length; i++){
 		if(i==7){bomb++;}  
 		if(i==8){bomb++;}  
 		if(i==9){bomb++;}  
-		if(bomb==7){rez+=1; count++;}   	
+		if(bomb==7){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -107,7 +107,7 @@ for(i=0; i<d.getElementsByName("q6").length; i++){
 
     if(d.getElementsByName("q6")[i].checked) {
       
-      if(i==1){rez+=1; count++;} 
+      if(i==1){score+=1; count++;} 
     }
 
 }
@@ -119,7 +119,7 @@ for(i=0; i<d.getElementsByName("q7").length; i++){
         if(i==1){bomb++;}  
 		if(i==2){bomb++;}     
 		if(i==6){bomb++;}   
-		if(bomb==3){rez+=1; count++;}   	
+		if(bomb==3){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -132,7 +132,7 @@ for(i=0; i<d.getElementsByName("q8").length; i++){
 		if(i==2){bomb++;}     
 		if(i==3){bomb++;} 
 		if(i==4){bomb++;}   		
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -145,7 +145,7 @@ for(i=0; i<d.getElementsByName("q9").length; i++){
 		if(i==1){bomb++;}     
 		if(i==2){bomb++;} 
 		if(i==4){bomb++;}   		
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -154,7 +154,7 @@ for(i=0; i<d.getElementsByName("q10").length; i++){
 
     if(d.getElementsByName("q10")[i].checked) {
       
-      if(i==3){rez+=1; count++;} 
+      if(i==3){score+=1; count++;} 
     }
 }
 
@@ -162,7 +162,7 @@ for(i=0; i<d.getElementsByName("q11").length; i++){
 
     if(d.getElementsByName("q11")[i].checked) {
       
-      if(i==4){rez+=1; count++;} 
+      if(i==4){score+=1; count++;} 
     }
 }
 
@@ -175,7 +175,7 @@ for(i=0; i<d.getElementsByName("q12").length; i++){
 		if(i==4){bomb++;} 
 		if(i==5){bomb++;}   
 		if(i==6){bomb++;}  		
-		if(bomb==5){rez+=1; count++;}   	
+		if(bomb==5){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -187,7 +187,7 @@ for(i=0; i<d.getElementsByName("q13").length; i++){
         if(i==0){bomb++;}  
 		if(i==2){bomb++;}     
 		if(i==5){bomb++;}   		
-		if(bomb==3){rez+=1; count++;}   	
+		if(bomb==3){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -200,7 +200,7 @@ for(i=0; i<d.getElementsByName("q14").length; i++){
 		if(i==2){bomb++;}     
 		if(i==3){bomb++;} 
 		if(i==4){bomb++;}   
-		if(bomb==4){rez+=1; count++;}   	
+		if(bomb==4){score+=1; count++;}   	
 	}
 }
 bomb=0;
@@ -212,17 +212,15 @@ for(i=0; i<d.getElementsByName("q15").length; i++){
         if(i==1){bomb++;}  
 		if(i==2){bomb++;}     
 		if(i==4){bomb++;}  		
-		if(bomb==3){rez+=1; count++;}   	
+		if(bomb==3){score+=1; count++;}   	
 	}
 }
 bomb=0;
 
-alert('Вы набрали '+rez+' баллов\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
+alert('Вы набрали '+score+' баллов\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
 
-rez=0;
+score=0;
 count=0;
-
-location.replace('choice.html'); 
  
 
 }
@@ -250,7 +248,7 @@ location.replace('choice.html');
 
 <div id="blok">
 
-<form method="get" enctype="text/plain" name="testForm">
+<form action="save_result.php" method="post" name="testForm">
 <h1>Внимание!</h1>
 <center>
 Для перемещения по тесту используйте прокрутку вниз. <br><br>
@@ -1405,7 +1403,7 @@ location.replace('choice.html');
 
 
 <p class="login button">
-<input type="button" value="Принять" name="ok" onclick="stopTest()"/>
+<input type="submit" value="Принять" name="ok" onclick="stopTest()"/>
 </p>
                                 <p class="change_link">
 									Надоело проходить?

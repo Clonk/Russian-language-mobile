@@ -29,25 +29,26 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="register" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="save_user.php" method="post" autocomplete="on"> 
                                 <p> 
-                                    <label for="usernamesignup" class="uname" data-icon="u">Ваши ФИО</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
-                                </p>
-                                <p> 
-                                    <label for="emailsignup" class="youmail" data-icon="e" >Ваш email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Ваш логин</label>
+                                    <input id="usernamesignup" name="login" required="required" type="text" placeholder="к примеру: LusyaX" />
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Ваш пароль</label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="password" required="required" type="password" placeholder="например: 347jhs"/>
                                 </p>
-                                <p> 
-                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Повтор пароля </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+								<p> 
+                                    <label for="usernamesignup" class="uname" data-icon="p" >Ваш город</label>
+                                    <input id="usernamesignup" name="city" required="required" type="text" placeholder="например: Грозный"/> 
                                 </p>
+								<p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u" >Ваши ФИО</label>
+                                    <input id="usernamesignup" name="name" required="required" type="text" placeholder="например: Иванов Иван Иваныч"/> 
+                                </p>
+
                                 <p class="signin button"> 
-									<input type="submit" value="Регистрация"/> 
+									<input type="submit" name="submit" value="Регистрация"/> 
 								</p>
                                 <p class="change_link">  
 									Уже зарегистрированы ?

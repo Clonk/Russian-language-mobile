@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
-    //  вся процедура работает на сессиях. Именно в ней хранятся данные  пользователя, пока он находится на сайте. Очень важно запустить их в  самом начале странички!!!
-    session_start();
-    ?>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
@@ -32,27 +28,18 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="testreg.php" method="post" autocomplete="on"> 
-                                <h1>Знатоки русского языка</h1> 
-                                <p> 
-                                    <label for="username" class="uname" data-icon="u" > Ваш email адрес </label>
-                                    <input id="username" name="login" required="required" type="text" placeholder="к примеру Vasja1997"/>
-                                </p>
-                                <p> 
-                                    <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="например X8df!90EO" /> 
-                                </p>
+                            <form  autocomplete="on"> 
+                                <h1>Внимание!</h1> 
+      <p><center>Спасибо за регистрацию!</center>
+	 </p>
                                 
-                                <p class="login button"> 
-                                    <input type="submit" name="submit" value="Логин" /> 
+								<p class="change_link">
+									Вернуться к логину
+									<a href="index.html">Назад</a>
 								</p>
+
 								
-								
-								
-                                <p class="change_link">
-									Участвуйте!
-									<a href="register.html">Регистрация</a>
-								</p>
+  
                             </form>
                         </div>
 
