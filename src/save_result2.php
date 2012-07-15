@@ -17,14 +17,14 @@ if (isset($_SESSION['login'])) { $login=$_SESSION['login']; if ($login =='') { u
  // подключаемся к базе
     include ("bd.php"); 
  // проверка на существование
-    $result = mysql_query("SELECT id FROM russian_table WHERE login='$login'",$db); //В таблицу russian_table
+    $result = mysql_query("SELECT id FROM russian_table2 WHERE login='$login'",$db); //В таблицу russian_table2
     $myrow = mysql_fetch_array($result);
     if (!empty($myrow['id'])) {
     echo ("<script>location.href='alert1.html'</script>"); 
     }
 	
  // если такого нет, то сохраняем данные
-    $result2 = mysql_query ("INSERT INTO russian_table (login,name,score,city) VALUES('$login','$name','$score','$city')"); //В таблицу russian_table
+    $result2 = mysql_query ("INSERT INTO russian_table2 (login,name,score,city) VALUES('$login','$name','$score','$city')"); //В таблицу russian_table2
 	
     // Проверяем, есть ли ошибки
     if ($result2=='TRUE')

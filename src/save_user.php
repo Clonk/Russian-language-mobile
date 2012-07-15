@@ -25,19 +25,19 @@
  // подключаемся к базе
     include ("bd.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
  // проверка на существование пользователя с таким же логином
-    $result = mysql_query("SELECT id FROM users WHERE login='$login'",$db);
+    $result = mysql_query("SELECT id FROM users WHERE login='$login'",$db); //Из таблицы users
     $myrow = mysql_fetch_array($result);
     if (!empty($myrow['id'])) {
     echo ("<script>location.href='alert2.html'</script>"); 
     }
  // если такого нет, то сохраняем данные
-    $result2 = mysql_query ("INSERT INTO users (login,password,city,name) VALUES('$login','$password','$city','$name')");
+    $result2 = mysql_query ("INSERT INTO users (login,password,city,name) VALUES('$login','$password','$city','$name')"); //В таблицу users
     // Проверяем, есть ли ошибки
     if ($result2=='TRUE')
     {
     echo ("<script>location.href='alert4.html'</script>"); 
     }
  else {
-    echo "Ошибка! Вы не зарегистрированы.";
+    echo ("<script>location.href='alert2.html'</script>"); 
     }
     ?>

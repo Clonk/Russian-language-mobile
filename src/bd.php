@@ -1,4 +1,4 @@
 <?php
-        $db = mysql_connect ("localhost","clonk_musix","123123");
-        mysql_select_db ("clonk_board",$db);
+$db = mysql_connect("ваш MySQL сервер","логин к этому серверу","пароль к этому серверу") or die ("Нет коннекта к базе."); 
+mysql_select_db("имя базы, к которой подключаемся",$db);
         ?> 

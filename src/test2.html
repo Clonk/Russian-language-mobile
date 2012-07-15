@@ -211,11 +211,6 @@ for(i=0; i<d.getElementsByName("q15").length; i++){
 bomb=0;
 
 alert('Вы набрали '+rez+' баллов из '+bl+'\nВы правильно ответили на '+count+ ' вопросов из '+vsego+'.');         
-
-rez=0;
-count=0;
-
-location.replace('choice.html'); 
  
 
 }
@@ -243,7 +238,7 @@ location.replace('choice.html');
 
 <div id="blok">
 
-<form method="get" enctype="text/plain" name="testForm">
+<form action="save_result2.php" method="post" name="testForm">
 <h1>Внимание!</h1>
 <center>
 Для перемещения по тесту используйте прокрутку вниз. <br><br>
@@ -1348,7 +1343,7 @@ location.replace('choice.html');
 
 
 <p class="login button">
-<input type="button" value="Принять" name="ok" onclick="stopTest()"/>
+<input type="submit" value="Принять" name="ok" onclick="stopTest()"/>
 </p>
                                 <p class="change_link">
 									Надоело проходить?
